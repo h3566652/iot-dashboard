@@ -1,38 +1,126 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.subtitle {
+  color: #888;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.updated {
+  color: #555;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card h2 {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.label {
+  font-size: 12px;
+  color: #555;
 }
 
-.App-link {
-  color: #61dafb;
+.chart-container {
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart-container h2 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.anomaly-container {
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.anomaly-container h2 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.anomaly-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.anomaly-table th {
+  text-align: left;
+  padding: 10px;
+  color: #888;
+  border-bottom: 1px solid #2a2a2a;
+  font-weight: 500;
+}
+
+.anomaly-table td {
+  padding: 10px;
+  border-bottom: 1px solid #1a1a1a;
+  color: #ccc;
+}
+
+.normal {
+  color: #00cc44;
+  font-size: 14px;
 }
